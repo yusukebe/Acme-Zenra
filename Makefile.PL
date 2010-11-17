@@ -2,7 +2,11 @@ use inc::Module::Install;
 name 'Acme-Zenra';
 all_from 'lib/Acme/Zenra.pm';
 
-# requires '';
+requires 'Carp';
+requires 'URI';
+requires 'LWP::UserAgent';
+requires 'XML::Simple';
+requires 'Encode';
 
 tests 't/*.t';
 author_tests 'xt';
